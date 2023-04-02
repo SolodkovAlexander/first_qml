@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/default/index.theme</file>
+        <file>icons/default/20x20/apps/exit.png</file>
+        <file>icons/default/20x20/apps/exit-selected.png</file>
+        <file>icons/default/scalable/apps/add.svg</file>
+        <file>icons/default/scalable/apps/add-selected.svg</file>
+        <file>icons/default/scalable/apps/copy.svg</file>
+        <file>icons/default/scalable/apps/copy-selected.svg</file>
+        <file>icons/default/scalable/apps/edit.svg</file>
+        <file>icons/default/scalable/apps/edit-selected.svg</file>
+        <file>icons/default/scalable/apps/export.svg</file>
+        <file>icons/default/scalable/apps/export-selected.svg</file>
+        <file>icons/default/scalable/apps/import.svg</file>
+        <file>icons/default/scalable/apps/import-selected.svg</file>
+        <file>icons/default/scalable/apps/play.svg</file>
+        <file>icons/default/scalable/apps/release.svg</file>
+        <file>icons/default/scalable/apps/release-selected.svg</file>
+        <file>icons/default/scalable/apps/remove.svg</file>
+        <file>icons/default/scalable/apps/remove-selected.svg</file>
+    </qresource>
+</RCC>

@@ -6,12 +6,8 @@ CppApplication {
     property pathList qmlImportPaths: []
 
     files: [
+        "icons.qrc",
         "main.cpp",
+        "qml.qrc",
     ]
-
-    Group {
-        Qt.core.resourcePrefix: "first/"
-        fileTags: ["qt.qml.qml", "qt.core.resource_data"]
-        files: ["Main.qml"]
-    }
 }

@@ -1,0 +1,18 @@
+[Icon Theme]
+Name=default
+Comment=Default theme icons
+
+Directories=20x20/apps,scalable/apps
+
+[scalable/apps]
+Size=35
+Type=Scalable
+MinSize=1
+MaxSize=256
+Context=Applications
+
+[20x20/apps]
+Size=32
+Scale=2
+Type=Fixed
+Context=Applications
