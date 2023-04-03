@@ -31,12 +31,15 @@ Window {
                 ToolButton {
                     id: playProjectButton
                     text: qsTr("Запустить")
-                    icon.name: "play"
-                    icon.source: "icons/default/scalable/apps/play.svg"
+                    icon {
+                        name: "play"
+                        source: "icons/default/scalable/apps/play.svg"
+                        height: 25
+                        width: 25
+                    }
+                    padding: 0
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 100
-                    Layout.minimumWidth: 100
-                    Layout.maximumWidth: 100
+                    Layout.preferredWidth: 100; Layout.minimumWidth: 100; Layout.maximumWidth: 100
                 }
 
                 ToolSeparator {
@@ -44,45 +47,49 @@ Window {
                     topPadding: 5
                     bottomPadding: 5
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 14
-                    Layout.minimumWidth: 14
-                    Layout.maximumWidth: 14
+                    Layout.preferredWidth: 14; Layout.minimumWidth: 14; Layout.maximumWidth: 14
                 }
 
                 ToolButton {
                     id: importProjectButton
-                    width: 35
-                    icon.name: "import"
-                    icon.source: "icons/default/scalable/apps/import.svg"
+                    icon {
+                        name: !hovered ? "import" : "import-selected"
+                        source: "icons/default/scalable/apps/import.svg"
+                        height: 25
+                        width: 25
+                    }
                     display: AbstractButton.IconOnly
+                    padding: 0
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 35
-                    Layout.minimumWidth: 35
-                    Layout.maximumWidth: 35
+                    Layout.preferredWidth: 35; Layout.minimumWidth: 35; Layout.maximumWidth: 35
                 }
 
                 ToolButton {
                     id: exportProjectButton
-                    width: 35
-                    icon.name: "export"
-                    icon.source: "icons/default/scalable/apps/export.svg"
+                    icon {
+                        name: !hovered ? "export" : "export-selected"
+                        source: "icons/default/scalable/apps/export.svg"
+                        height: 25
+                        width: 25
+                    }
                     display: AbstractButton.IconOnly
+                    padding: 0
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 35
-                    Layout.minimumWidth: 35
-                    Layout.maximumWidth: 35
+                    Layout.preferredWidth: 35; Layout.minimumWidth: 35; Layout.maximumWidth: 35
                 }
 
                 ToolButton {
                     id: releaseProjectButton
-                    width: 35
-                    icon.name: "release"
-                    icon.source: "icons/default/scalable/apps/release.svg"
+                    icon {
+                        name: !hovered ? "release" : "release-selected"
+                        source: "icons/default/scalable/apps/release.svg"
+                        height: 25
+                        width: 25
+                    }
                     display: AbstractButton.IconOnly
+                    padding: 0
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 35
-                    Layout.minimumWidth: 35
-                    Layout.maximumWidth: 35
+                    Layout.preferredWidth: 35; Layout.minimumWidth: 35; Layout.maximumWidth: 35
                 }
 
                 ToolSeparator {
@@ -90,53 +97,63 @@ Window {
                     bottomPadding: 5
                     topPadding: 5
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 14
-                    Layout.minimumWidth: 14
-                    Layout.maximumWidth: 14
+                    Layout.preferredWidth: 14; Layout.minimumWidth: 14; Layout.maximumWidth: 14
                 }
 
                 ToolButton {
                     id: addProjectButton
-                    icon.name: "add"
-                    icon.source: "icons/default/scalable/apps/add.svg"
+                    icon {
+                        name: !hovered ? "add" : "add-selected"
+                        source: "icons/default/scalable/apps/add.svg"
+                        height: 25
+                        width: 25
+                    }
                     display: AbstractButton.IconOnly
+                    padding: 0
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 35
-                    Layout.minimumWidth: 35
-                    Layout.maximumWidth: 35
+                    Layout.preferredWidth: 35; Layout.minimumWidth: 35; Layout.maximumWidth: 35
                 }
 
                 ToolButton {
                     id: copyProjectButton
-                    icon.name: "copy"
-                    icon.source: "icons/default/scalable/apps/copy.svg"
+                    icon {
+                        name: !hovered ? "copy" : "copy-selected"
+                        source: "icons/default/scalable/apps/copy.svg"
+                        height: 25
+                        width: 25
+                    }
                     display: AbstractButton.IconOnly
+                    padding: 0
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 35
-                    Layout.minimumWidth: 35
-                    Layout.maximumWidth: 35
+                    Layout.preferredWidth: 35; Layout.minimumWidth: 35; Layout.maximumWidth: 35
                 }
 
                 ToolButton {
                     id: editProjectButton
-                    icon.name: "edit"
-                    icon.source: "icons/default/scalable/apps/edit.svg"
+                    icon {
+                        name: !hovered ? "edit" : "edit-selected"
+                        source: "icons/default/scalable/apps/edit.svg"
+                        height: 25
+                        width: 25
+                    }
                     display: AbstractButton.IconOnly
+                    padding: 0
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 35
-                    Layout.minimumWidth: 35
-                    Layout.maximumWidth: 35
+                    Layout.preferredWidth: 35; Layout.minimumWidth: 35; Layout.maximumWidth: 35
                 }
 
                 ToolButton {
                     id: removeProjectButton
-                    icon.name: "remove"
-                    icon.source: "icons/default/scalable/apps/remove.svg"
+                    icon {
+                        name: !hovered ? "remove" : "remove-selected"
+                        source: "icons/default/scalable/apps/remove.svg"
+                        height: 25
+                        width: 25
+                    }
                     display: AbstractButton.IconOnly
+                    padding: 0
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 35
-                    Layout.minimumWidth: 35
-                    Layout.maximumWidth: 35
+                    Layout.preferredWidth: 35; Layout.minimumWidth: 35; Layout.maximumWidth: 35
                 }
 
                 ToolSeparator {
@@ -144,9 +161,7 @@ Window {
                     bottomPadding: 5
                     topPadding: 5
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 14
-                    Layout.minimumWidth: 14
-                    Layout.maximumWidth: 14
+                    Layout.preferredWidth: 14; Layout.minimumWidth: 14; Layout.maximumWidth: 14
                 }
 
                 TextField {
@@ -154,8 +169,7 @@ Window {
                     placeholderText: qsTr("Поиск")
                     font.pixelSize: 12
                     Layout.fillWidth: true
-                    Layout.preferredWidth: 150
-                    Layout.minimumWidth: 150
+                    Layout.preferredWidth: 150; Layout.minimumWidth: 150
                 }
 
                 ToolSeparator {
@@ -163,20 +177,21 @@ Window {
                     bottomPadding: 5
                     topPadding: 5
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 14
-                    Layout.minimumWidth: 14
-                    Layout.maximumWidth: 14
+                    Layout.preferredWidth: 14; Layout.minimumWidth: 14; Layout.maximumWidth: 14
                 }
 
                 ToolButton {
                     id: exitButton
-                    icon.name: "exit"
-                    icon.source: "icons/default/20x20/apps/exit.png"
+                    icon {
+                        name: !hovered ? "exit" : "exit-selected"
+                        source: "icons/default/20x20/apps/exit.png"
+                        height: 25
+                        width: 25
+                    }
                     display: AbstractButton.IconOnly
+                    padding: 0
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 35
-                    Layout.minimumWidth: 35
-                    Layout.maximumWidth: 35
+                    Layout.preferredWidth: 35; Layout.minimumWidth: 35; Layout.maximumWidth: 35
                 }
             }
         }
